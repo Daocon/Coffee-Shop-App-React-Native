@@ -2,42 +2,11 @@
   "login": [
     {
       "id": 1,
-      "name": "Ha Van Dao",
-      "email": "hadao1204@gmail.com",
-      "password": "daovan123",
-      "phone": "0972189694",
-      "image": "https://bonjourcoffee.vn/blog/wp-content/uploads/2020/01/capuchino.jpg"
-    },
-    {
-      "id": 2,
       "name": "admin",
       "email": "admin@gmail.com",
       "password": "admin123",
       "image": "https://bonjourcoffee.vn/blog/wp-content/uploads/2020/01/capuchino.jpg",
       "phone": "0123456789"
-    },
-    {
-      "id": "d8c7",
-      "name": "Ha Van Duc",
-      "email": "haduc@gmail.com",
-      "phone": "012212312",
-      "image": "https://bonjourcoffee.vn/blog/wp-content/uploads/2020/01/capuchino.jpg",
-      "password": "123"
-    },
-    {
-      "id": "bdc7",
-      "name": "Hai",
-      "email": "hadao1@gmail.com",
-      "phone": "0121212122",
-      "image": "https://bonjourcoffee.vn/blog/wp-content/uploads/2020/01/capuchino.jpg",
-      "password": "0123456789"
-    },
-    {
-      "id": "3465",
-      "name": "Ha Van Dao",
-      "email": "ha@gmail.com",
-      "phone": "0123456789",
-      "password": "12345678"
     }
   ],
   "coffeeTypes": [
