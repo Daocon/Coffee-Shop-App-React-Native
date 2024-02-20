@@ -1,118 +1,108 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
+import * as React from 'react';
+import { View, Text, Image } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import Login from './src/screens/auth/Login';
+import SplashScreen from './src/screens/intro/SplashScreen';
+import Register from './src/screens/auth/Register';
+import HomeScreen from './src/screens/tabs/HomeScreen';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import CartScreen from './src/screens/tabs/CartScreen';
+import FavoritesScreen from './src/screens/tabs/FavoritesScreen';
+import OrderScreen from './src/screens/tabs/OrderScreen';
+import SettingScreen from './src/screens/SettingScreen';
+import DetailScreen from './src/screens/DetailScreen';
+import PaymentScreen from './src/screens/PaymentScreen';
+import PersonScreen from './src/screens/PersonScreen';
 
-import React from 'react';
-import type {PropsWithChildren} from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
+const homeName = 'HomeScreen';
+const cartScreen = 'CartScreen';
+const favorScreen = 'FavoritesScreen';
+const orderScreen = 'OrderScreen';
 
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+const Stack = createNativeStackNavigator();
+const Tab = createBottomTabNavigator();
 
-type SectionProps = PropsWithChildren<{
-  title: string;
-}>;
-
-function Section({children, title}: SectionProps): React.JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
+const App = () => {
   return (
-    <View style={styles.sectionContainer}>
-      <Text
-        style={[
-          styles.sectionTitle,
-          {
-            color: isDarkMode ? Colors.white : Colors.black,
-          },
-        ]}>
-        {title}
-      </Text>
-      <Text
-        style={[
-          styles.sectionDescription,
-          {
-            color: isDarkMode ? Colors.light : Colors.dark,
-          },
-        ]}>
-        {children}
-      </Text>
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName='SplashScreen' screenOptions={{headerShown: false}}>
+        <Stack.Screen name="SplashScreen" component={SplashScreen} />
+        <Stack.Screen name="Login" component={Login} />
+        <Stack.Screen name="Register" component={Register} />
+        <Stack.Screen name="HomeScreen" component={MainContainer} />
+        <Stack.Screen name='SettingScreen' component={SettingScreen} />
+        <Stack.Screen name='DetailScreen' component={DetailScreen} />
+        <Stack.Screen name='PaymentScreen' component={PaymentScreen} />
+        <Stack.Screen name='PersonScreen' component={PersonScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
 
-function App(): React.JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
-
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
-
+const MainContainer = () => {
   return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        backgroundColor={backgroundStyle.backgroundColor}
-      />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}>
-        <Header />
-        <View
-          style={{
-            backgroundColor: isDarkMode ? Colors.black : Colors.white,
-          }}>
-          <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.tsx</Text> to change this
-            screen and then come back to see your edits.
-          </Section>
-          <Section title="See Your Changes">
-            <ReloadInstructions />
-          </Section>
-          <Section title="Debug">
-            <DebugInstructions />
-          </Section>
-          <Section title="Learn More">
-            Read the docs to discover what to do next:
-          </Section>
-          <LearnMoreLinks />
-        </View>
-      </ScrollView>
-    </SafeAreaView>
+      <Tab.Navigator 
+        initialRouteName={homeName} 
+        screenOptions={{
+          tabBarStyle: {backgroundColor: '#0C0F14', borderTopWidth: 0, height: 70},
+          tabBarActiveTintColor: '#D17842',
+          tabBarHideOnKeyboard: true,
+          tabBarLabel:()=> null}} >
+        <Tab.Screen
+          name={homeName}
+          component={HomeScreen}
+          options={{
+            headerShown: false,
+            tabBarIcon: ({focused}) => (
+              <Image
+                style={{height: 24, width: 24, tintColor: focused ? '#D17842' : undefined}}
+                source={require('./assets/images/home.png')}
+              />
+            ),
+          }}
+        />
+        <Tab.Screen
+          name={cartScreen}
+          component={CartScreen}
+          options={{
+            headerShown: false,
+            tabBarIcon: ({focused}) => (
+              <Image
+                style={{height: 27, width: 24, tintColor: focused ? '#D17842' : undefined}}
+                source={require('./assets/images/cart.png')}
+              />
+            ),
+          }}
+        />
+        <Tab.Screen
+          name={favorScreen}
+          component={FavoritesScreen}
+          options={{
+            headerShown: false,
+            tabBarIcon: ({focused}) => (
+              <Image
+                style={{height: 24, width: 27, tintColor: focused ? '#D17842' : undefined}}
+                source={require('./assets/images/favor.png')}
+              />
+            ),
+          }}
+        />
+        <Tab.Screen
+          name={orderScreen}
+          component={OrderScreen}
+          options={{
+            headerShown: false,
+            tabBarIcon: ({focused}) => (
+              <Image
+                style={{height: 27, width: 22, tintColor: focused ? '#D17842' : undefined}}
+                source={require('./assets/images/order.png')}
+              />
+            ),
+          }}
+        />
+      </Tab.Navigator>
   );
-}
-
-const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-});
+};
 
 export default App;
