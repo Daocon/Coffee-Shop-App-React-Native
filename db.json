@@ -1,0 +1,278 @@
+{
+  "login": [
+    {
+      "id": 1,
+      "name": "Ha Van Dao",
+      "email": "hadao1204@gmail.com",
+      "password": "daovan123",
+      "phone": "0972189694",
+      "image": "https://bonjourcoffee.vn/blog/wp-content/uploads/2020/01/capuchino.jpg"
+    },
+    {
+      "id": 2,
+      "name": "admin",
+      "email": "admin@gmail.com",
+      "password": "admin123",
+      "image": "https://bonjourcoffee.vn/blog/wp-content/uploads/2020/01/capuchino.jpg",
+      "phone": "0123456789"
+    },
+    {
+      "id": "d8c7",
+      "name": "Ha Van Duc",
+      "email": "haduc@gmail.com",
+      "phone": "012212312",
+      "image": "https://bonjourcoffee.vn/blog/wp-content/uploads/2020/01/capuchino.jpg",
+      "password": "123"
+    },
+    {
+      "id": "bdc7",
+      "name": "Hai",
+      "email": "hadao1@gmail.com",
+      "phone": "0121212122",
+      "image": "https://bonjourcoffee.vn/blog/wp-content/uploads/2020/01/capuchino.jpg",
+      "password": "0123456789"
+    },
+    {
+      "id": "3465",
+      "name": "Ha Van Dao",
+      "email": "ha@gmail.com",
+      "phone": "0123456789",
+      "password": "12345678"
+    }
+  ],
+  "coffeeTypes": [
+    {
+      "id": "all",
+      "name": "All"
+    },
+    {
+      "id": "1",
+      "name": "Type 1 Coffees"
+    },
+    {
+      "id": "2",
+      "name": "Type 2 Coffees"
+    }
+  ],
+  "all": [
+    {
+      "id": "1",
+      "name": "Type 1 Coffee A",
+      "description": "Cappuccino is a latte made with more foam than steamed milk, often with a sprinkle of cocoa powder or cinnamon on top.",
+      "price": 5,
+      "image": "https://bonjourcoffee.vn/blog/wp-content/uploads/2020/01/capuchino.jpg",
+      "star": 4.5,
+      "ingredient": "Milk",
+      "favorites": true,
+      "types": 1,
+      "category": "Coffee"
+    },
+    {
+      "id": "2",
+      "name": "Type 1 Coffee B",
+      "description": "Bittersweet – A result of the roast, associated with dark roasts having caramelized the sugars in the bean to the point of producing a Bittersweet taste that overpowers or replaces the delicate flavors of the bean.",
+      "price": 6.5,
+      "image": "https://caphecaonguyen.vn/uploads/details/2021/08/images/cach-pha-ca-phe-capuchino-khong-can-may-nhanh-nhat1.jpg",
+      "star": 4.2,
+      "ingredient": "Milk",
+      "favorites": true,
+      "types": 1,
+      "category": "Coffee"
+    },
+    {
+      "id": "3",
+      "name": "Type 1 Coffee C",
+      "description": "Description for Type 1 Coffee C",
+      "price": 7.5,
+      "image": "https://mqflavor.com/wp-content/uploads/2019/03/capuchino.jpg",
+      "star": 4,
+      "ingredient": "Milk",
+      "favorites": true,
+      "types": 1,
+      "category": "Coffee"
+    },
+    {
+      "id": "4",
+      "name": "Type 1 Coffee D",
+      "description": "Description for Type 1 Coffee D",
+      "price": 8,
+      "image": "https://bonjourcoffee.vn/blog/wp-content/uploads/2020/01/capuchino.jpg",
+      "star": 2.5,
+      "types": 1,
+      "ingredient": "Milk",
+      "favorites": false,
+      "category": "Coffee"
+    },
+    {
+      "id": "5",
+      "name": "Type 1 Coffee E",
+      "description": "Description for Type 1 Coffee E",
+      "price": 9,
+      "image": "https://mqflavor.com/wp-content/uploads/2019/03/capuchino.jpg",
+      "star": 4.5,
+      "types": 1,
+      "ingredient": "Milk",
+      "favorites": false,
+      "category": "Coffee"
+    },
+    {
+      "id": "6",
+      "name": "Type 2 Coffee X",
+      "description": "Description for Type 2 Coffee X",
+      "price": 7,
+      "image": "https://caphecaonguyen.vn/uploads/details/2021/08/images/cach-pha-ca-phe-capuchino-khong-can-may-nhanh-nhat1.jpg",
+      "star": 4.8,
+      "types": 2,
+      "ingredient": "Milk",
+      "favorites": false,
+      "category": "Coffee"
+    },
+    {
+      "id": "7",
+      "name": "Type 2 Coffee Y",
+      "description": "Description for Type 2 Coffee Y",
+      "price": 8.5,
+      "image": "https://bonjourcoffee.vn/blog/wp-content/uploads/2020/01/capuchino.jpg",
+      "star": 5,
+      "types": 2,
+      "ingredient": "Milk",
+      "favorites": false,
+      "category": "Coffee"
+    },
+    {
+      "id": "8",
+      "name": "Type 2 Coffee Z",
+      "description": "Description for Type 2 Coffee Z",
+      "price": 9,
+      "image": "https://bonjourcoffee.vn/blog/wp-content/uploads/2020/01/capuchino.jpg",
+      "star": 4,
+      "types": 2,
+      "favorites": false,
+      "ingredient": "Milk",
+      "category": "Coffee"
+    },
+    {
+      "id": "9",
+      "name": "Type 2 Coffee W",
+      "description": "Description for Type 2 Coffee W",
+      "price": 10,
+      "image": "https://mqflavor.com/wp-content/uploads/2019/03/capuchino.jpg",
+      "star": 4.5,
+      "types": 2,
+      "ingredient": "Milk",
+      "favorites": false,
+      "category": "Coffee"
+    },
+    {
+      "id": "10",
+      "name": "Type 2 Coffee V",
+      "description": "Description for Type 2 Coffee V",
+      "price": 11,
+      "image": "https://caphecaonguyen.vn/uploads/details/2021/08/images/cach-pha-ca-phe-capuchino-khong-can-may-nhanh-nhat1.jpg",
+      "star": 4.5,
+      "types": 2,
+      "ingredient": "Milk",
+      "favorites": false,
+      "category": "Coffee"
+    }
+  ],
+  "beans": [
+    {
+      "id": "11",
+      "name": "Coffee Bean 1",
+      "description": "Description for Coffee Bean 1",
+      "price": 12,
+      "star": 4,
+      "location": "Africa",
+      "image": "https://www.pepperhub.in/wp-content/uploads/2022/11/Natural-Coffee-Beans.jpg",
+      "category": "Bean"
+    },
+    {
+      "id": "12",
+      "name": "Coffee Bean 2",
+      "description": "Description for Coffee Bean 2",
+      "price": 15,
+      "star": 4.2,
+      "location": "Brazil",
+      "image": "https://www.fair-well.co.uk/wp-content/uploads/FWWebsite-products-2-1-8.jpg",
+      "category": "Bean"
+    },
+    {
+      "id": "13",
+      "name": "Coffee Bean 3",
+      "description": "Description for Coffee Bean 3",
+      "price": 18,
+      "star": 4.5,
+      "location": "Ethiopia",
+      "image": "https://www.pepperhub.in/wp-content/uploads/2022/11/Natural-Coffee-Beans.jpg",
+      "category": "Bean"
+    },
+    {
+      "id": "14",
+      "name": "Coffee Bean 4",
+      "description": "Description for Coffee Bean 4",
+      "price": 20,
+      "star": 3.5,
+      "location": "Colombia",
+      "image": "https://www.fair-well.co.uk/wp-content/uploads/FWWebsite-products-2-1-8.jpg",
+      "category": "Bean"
+    },
+    {
+      "id": "15",
+      "name": "Coffee Bean 5",
+      "description": "Description for Coffee Bean 5",
+      "price": 22,
+      "star": 4.3,
+      "image": "https://www.pepperhub.in/wp-content/uploads/2022/11/Natural-Coffee-Beans.jpg",
+      "category": "Bean"
+    }
+  ],
+  "billOrders": [
+    {
+      "id": "c8ef",
+      "dataCartItems": [
+        {
+          "coffeeData": {
+            "id": "13",
+            "name": "Coffee Bean 3",
+            "description": "Description for Coffee Bean 3",
+            "price": 18,
+            "star": 4.5,
+            "location": "Ethiopia",
+            "image": "https://www.pepperhub.in/wp-content/uploads/2022/11/Natural-Coffee-Beans.jpg",
+            "category": "Bean"
+          },
+          "selectedSize": "500gm",
+          "quantity": 1
+        }
+      ],
+      "paymentMethod": "Apple Pay",
+      "totalAmount": 72,
+      "quantityBuy": 4,
+      "completionTime": "2024-2-19 19:31:58"
+    },
+    {
+      "id": "f11c",
+      "dataCartItems": [
+        {
+          "coffeeData": {
+            "id": "11",
+            "name": "Coffee Bean 1",
+            "description": "Description for Coffee Bean 1",
+            "price": 12,
+            "star": 4,
+            "location": "Africa",
+            "image": "https://www.pepperhub.in/wp-content/uploads/2022/11/Natural-Coffee-Beans.jpg",
+            "category": "Bean"
+          },
+          "selectedSize": "500gm",
+          "quantity": 1
+        }
+      ],
+      "paymentMethod": "Google Pay",
+      "totalAmount": 24,
+      "quantityBuy": 2,
+      "completionTime": "2024-2-19 19:58:37"
+    }
+  ]
+}
